@@ -1,0 +1,11 @@
+command to compile files with headers "llvm/..h"
+
+clang++ -g -O3 test.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -o test
+
+to generate ast in terminal
+clang -Xclang -ast-dump test.c
+
+
+https://sewiki.iai.uni-bonn.de/research/jtransformer/docs/start
+
+
